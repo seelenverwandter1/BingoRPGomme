@@ -12,11 +12,11 @@ jobs:
         git config --global user.email "emailhere"
         git config pull.rebase false
         git pull
-        rm -f release.zip
+        rm -f BingoRPGomme.zip
     - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
-        filename: 'release.zip'
+        filename: 'BingoRPGomme.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
     - name: push changes to remote
       run: |
