@@ -10,3 +10,6 @@ jobs:
       with:
         filename: 'penner.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig *assets/minecraft/textures/gui/container*'
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+          commit_message: Changed files
