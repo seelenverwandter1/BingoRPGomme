@@ -1,15 +1,14 @@
-name: Compress
+name: Yess
 
 on: [push]
 
 jobs:
-  zip-files:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-     - uses: TonyBogdanov/zip@1.0
-       with:
-          args: zip -qq -r ./archive.zip . -i ./assets
-          dest: result4.zip
-     - uses: stefanzweifel/git-auto-commit-action@v4
-       with:
-            commit_message: Changed files
+      - uses: actions/checkout@v2
+      - name: tonybogdanov-zip
+        uses: TonyBogdanov/zip@1.0
+      - name: Zip Windows
+        run: cd . zip -qq -r ./RP.zip ./assets
