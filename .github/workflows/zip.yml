@@ -12,3 +12,6 @@ jobs:
         uses: TonyBogdanov/zip@1.0
       - name: Zip Windows
         run: cd . && zip -qq -r ./RP.zip ./assets
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+            commit_message: Changed files
