@@ -1,17 +1,25 @@
-name: Yess
+# This is a basic workflow to help you get started with Actions
 
+name: Zip plugin
+
+# Controls when the workflow will run
 on: [push]
 
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  # This workflow contains a single job called "build"
   build:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: tonybogdanov-zip
+
+      - name: tonybogdanov-zip     
         uses: TonyBogdanov/zip@1.0
-      - name: Zip Windows
-        run: cd . && zip -qq -r ./RP.zip ./assets
+        
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
             commit_message: Changed files
