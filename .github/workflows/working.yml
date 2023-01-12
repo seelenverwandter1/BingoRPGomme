@@ -8,13 +8,12 @@ jobs:
     - name: pull latest and remove old file from repo
       run: |
         git config --global user.name "1Timo1"
-    - name: Archive
-      uses: thedoctor0/zip-release@master
-      with:
-          type: 'zip'
-          filename: 'rawproto-linux-i64.zip'
-          directory: .
-          exclusions: '*.git* /*node_modules/* .editorconfig *assets/minecraft/textures/gui/container* *.zip'
+    - name: Install zip
+      uses: montudor/action-zip@v1
+
+    - name: Zip output
+      run: zip -qq -r output.zip pack.mcmeta
+      working-directory: .
     - name: push changes to remote
       run: |
         git add -A
