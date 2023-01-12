@@ -16,7 +16,7 @@ jobs:
       uses: thedoctor0/zip-release@master
       with:
         filename: 'BingoRPGommeLight.zip'
-        exclusions: '*.git* /*node_modules/* .editorconfig *.zip /assets/minecraft/textures/gui/*' #exclude /assets/minecraft/textures/gui/*
+        exclusions: '/assets/minecraft/textures/gui/ *.git* /*node_modules/* .editorconfig *.zip'
     - name: push changes to remote
       run: |
         git add -A
