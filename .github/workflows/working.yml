@@ -11,7 +11,6 @@ jobs:
     - name: Archive Release
       uses: thedoctor0/zip-release@0.7.0
       with:
-        type: 'zip'
         filename: 'penner.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig *assets/minecraft/textures/gui/container*'
     - name: push changes to remote
