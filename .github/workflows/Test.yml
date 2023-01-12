@@ -10,4 +10,5 @@ jobs:
       with:
         filename: 'release.zip'
         directory: '.'
+        path: '.'
         exclusions: '*.git* /*node_modules/* .editorconfig'
