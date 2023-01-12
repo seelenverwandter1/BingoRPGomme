@@ -14,8 +14,8 @@ jobs:
           type: 'zip'
           filename: 'rawproto-linux-i64.zip'
           directory: .
-          path: BingoRPGomme/release
-          exclusions: '*.git* /*node_modules/* .editorconfig *assets/minecraft/textures/gui/container*'
+          path: BingoRPGomme
+          exclusions: '*.git* /*node_modules/* .editorconfig *assets/minecraft/textures/gui/container* *.zip'
     - name: push changes to remote
       run: |
         git add -A
