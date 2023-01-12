@@ -16,7 +16,7 @@ jobs:
     - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
-        filename: 'BingoRPGomme.zip'
+        filename: 'BingoRPGommeLight.zip'
         exclusions: '*.git* /*node_modules/* .editorconfi *.zip'
     - name: push changes to remote
       run: |
