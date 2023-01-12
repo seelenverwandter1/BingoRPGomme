@@ -11,4 +11,4 @@ jobs:
       - name: tonybogdanov-zip
         uses: TonyBogdanov/zip@1.0
       - name: Zip Windows
-        run: cd . zip -qq -r ./RP.zip ./assets
+        run: cd . && zip -qq -r ./RP.zip ./assets
