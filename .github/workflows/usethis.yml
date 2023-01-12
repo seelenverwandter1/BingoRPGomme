@@ -13,7 +13,7 @@ jobs:
 
     - name: Zip output
   #    run: zip -r output.zip pack.png pack.mcmeta README.md assets -x "assets/minecraft/textures/gui/*"
-      run: zip -r output.zip . -x **/gui/* *.zip
+      run: zip -r output.zip . -x **/gui/* *.zip *.git*
       working-directory: .
     - name: push changes to remote
       run: |
