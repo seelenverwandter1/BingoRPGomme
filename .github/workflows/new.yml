@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: vimtor/action-zip@v1
         with:
-          files: pack.png pack.mcmeta
+          files: pack.png pack.mcmeta README.md assets/ !gui
           dest: result.zip
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
