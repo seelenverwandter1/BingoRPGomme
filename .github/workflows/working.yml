@@ -12,7 +12,7 @@ jobs:
       uses: montudor/action-zip@v1
 
     - name: Zip output
-      run: zip -qq -r output.zip *
+      run: zip -qq -r output.zip pack.png pack.mcmeta README.md assets -x assets/minecraft/textures/gui/**\*
       working-directory: .
     - name: push changes to remote
       run: |
