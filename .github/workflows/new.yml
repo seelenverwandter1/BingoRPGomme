@@ -9,10 +9,18 @@ jobs:
       - uses: actions/checkout@v2
       - uses: vimtor/action-zip@v1
         with:
-          files: 'pack.png pack.mcmeta README.md assets/ !anvil.png'
-          exclude: 'anvil.png'
+          files: 'assets/'
           recursive: true
           dest: result.zip
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+            commit_message: Changed files
+            
+      - uses: vimtor/action-zip@v1
+        with:
+          files: 'pack.png pack.mcmeta README.md'
+          recursive: true
+          dest: result2.zip
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
             commit_message: Changed files
