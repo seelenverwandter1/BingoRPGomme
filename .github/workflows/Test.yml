@@ -9,5 +9,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: vimtor/action-zip@v1
         with:
-          files: assets/ !gui
+          files: assets/
           dest: BingoRPGommeLight2.zip
