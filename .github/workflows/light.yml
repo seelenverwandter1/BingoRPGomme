@@ -1,5 +1,8 @@
 name: Create Archive Light
-on: [push]
+on:
+  push:
+    paths-ignore:
+      - 'gui/**'
 jobs:
   build:
     runs-on: ubuntu-latest
