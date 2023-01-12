@@ -9,7 +9,7 @@ jobs:
      - uses: TonyBogdanov/zip@1.0
        with:
           args: zip -qq -r ./archive.zip . -i ./assets
-          
+          dest: result4.zip
      - uses: stefanzweifel/git-auto-commit-action@v4
        with:
             commit_message: Changed files
