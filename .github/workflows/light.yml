@@ -2,7 +2,7 @@ name: Create Archive Light
 on:
   push:
     paths-ignore:
-      - 'gui/**'
+      - 'assets/minecraft/textures/gui/container/**'
 jobs:
   build:
     runs-on: ubuntu-latest
