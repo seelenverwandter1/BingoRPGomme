@@ -11,3 +11,6 @@ jobs:
         with:
           files: pack.png pack.mcmeta
           dest: result.zip
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+            commit_message: Changed files
