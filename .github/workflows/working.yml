@@ -9,8 +9,9 @@ jobs:
       run: |
         git config --global user.name "1Timo1"
     - name: Archive Release
-      uses: thedoctor0/zip-release@master
+      uses: thedoctor0/zip-release@0.7.0
       with:
+        type: 'zip'
         filename: 'penner.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig *assets/minecraft/textures/gui/container*'
     - name: push changes to remote
