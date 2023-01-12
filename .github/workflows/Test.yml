@@ -8,7 +8,7 @@ jobs:
     - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
-        filename: 'release.zip'
+        filename: 'release.tar'
         directory: '.'
         path: '.'
         exclusions: '*.git* /*node_modules/* .editorconfig'
