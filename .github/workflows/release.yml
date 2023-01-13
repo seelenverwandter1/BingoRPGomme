@@ -65,19 +65,16 @@ jobs:
         # Author Icon/Image that would be on the embed
         author_icon: https://cdn.discordapp.com/avatars/539902118576914435/a_2106e998bd168a9216c04f3a76f0e25c.png
         # URL of The author which is on the embed
-     #   author_url: # optional
+        author_url: https://cdn.discordapp.com/avatars/539902118576914435/a_2106e998bd168a9216c04f3a76f0e25c.png
         # Footer Text that would be on the embed
-     #   footer: # optional
+        footer: Bla
         # Footer Icon/Image that would be on the embed
-     #   footer_icon: # optional
+        footer_icon: https://cdn.discordapp.com/avatars/539902118576914435/a_2106e998bd168a9216c04f3a76f0e25c.png
         # Image that would be on the embed
         image: https://cdn.discordapp.com/attachments/1056264822259458118/1056272281908826192/Komp_1.gif
         # Image that would be on the embed as Thumbnail
         thumbnail: https://cdn.discordapp.com/attachments/1056264822259458118/1056272281908826192/Komp_1.gif
         # Hex Code of a Color that would be on the embed, it would be RANDOM if it's not provided
-        color: # optional
-        # Enable Timestamp for the Embed
-     #   timestamp: # optional
+        color: ff0000
         # a Text for Description of Embed
-    #    description: # optional
-        
+        description: Blub        
