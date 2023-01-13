@@ -12,11 +12,8 @@ jobs:
       uses: montudor/action-zip@v1
 
     - name: Zip output
-      run: zip -r outputx.zip pack.png pack.mcmeta
+      run: zip -r release/outputx.zip pack.png pack.mcmeta
       working-directory: .
-      if: success() || failure()
-    - name: move output
-      run: mv output.zip release
     - name: push changes to remote
       run: |
         git add -A
