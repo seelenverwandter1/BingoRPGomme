@@ -14,9 +14,9 @@ jobs:
     - name: Zip output
       run: zip -r outputx.zip pack.png pack.mcmeta
       working-directory: .
+      if: success() || failure()
     - name: move output
       run: mv output.zip release
-      working-directory: .
     - name: push changes to remote
       run: |
         git add -A
