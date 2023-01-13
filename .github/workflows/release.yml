@@ -51,5 +51,5 @@ jobs:
         # Discord Channel webhook token
         webhook_token: ${{ secrets.DCToken }}
         # custom message to be sent
-        message: Update! https://github.com/1Timo1/BingoRPGomme/tree/main/release
+        message: Update! ${{ github.event.head_commit.message }} https://github.com/1Timo1/BingoRPGomme/tree/main/release
 
