@@ -10,9 +10,18 @@ jobs:
         git config --global user.name "1Timo1"
     - name: Install zip
       uses: montudor/action-zip@v1
-
-    - name: Zip output
-      run: zip -r release/outputx.zip pack.png pack.mcmeta README.md assets -x assets/minecraft/textures/gui/container\*
+#Light
+    - name: Zip output LightRP
+      run: zip -r release/light.zip pack.png pack.mcmeta README.md assets -x assets/minecraft/textures/gui\*
+      working-directory: .
+    - name: push changes to remote
+      run: |
+        git add -A
+        git commit -m "new pack"
+        git push --force
+  #Dark
+    - name: Zip output DarkRP
+      run: zip -r release/dark.zip pack.png pack.mcmeta README.md assets
       working-directory: .
     - name: push changes to remote
       run: |
