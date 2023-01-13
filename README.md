@@ -6,3 +6,4 @@ This Ressourcepack adds
 - Low Fire
 - Low Shield
 - Clear Water
+- Vanilla Tweaks
