@@ -40,13 +40,5 @@ jobs:
       with:
         name: BingoRPGommeDark.zip
         path: release/BingoRPGommeDark.zip
-        
-        
-    - uses: actions/checkout@v2
-
-    - name: Run Discord Webhook
-      uses: johnnyhuy/actions-discord-git-webhook@main 
-      with:
-        webhook_url: ${{ https://discord.com/api/webhooks/1063457130281181320/RrleG7273Jhi3Sn-DGVhRgl-v11wTY4qz7eu-VfjNbsaMou8z30ZYvzgxWoqNIppvEF3 }}
 
         
