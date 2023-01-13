@@ -40,5 +40,6 @@ jobs:
       with:
         name: BingoRPGommeDark.zip
         path: release/BingoRPGommeDark.zip
+        
 
         
