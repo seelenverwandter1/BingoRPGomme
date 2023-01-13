@@ -12,9 +12,8 @@ jobs:
       uses: montudor/action-zip@v1
 
     - name: Zip output
-  #    run: zip -r output.zip pack.png pack.mcmeta README.md assets -x "assets/minecraft/textures/gui/*"
-      run: zip -r output.zip pack.png
-      working-directory: .
+      run: zip -r outputx.zip pack.png
+      working-directory: release/
     - name: push changes to remote
       run: |
         git add -A
