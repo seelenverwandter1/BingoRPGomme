@@ -10,6 +10,7 @@ jobs:
         git config --global user.name "1Timo1"
     - name: Install zip
       uses: montudor/action-zip@v1
+      
 #Light
     - name: Zip output LightRP
       run: zip -r release/BingoRPGommeLight.zip pack.png pack.mcmeta README.md assets -x assets/minecraft/textures/gui\*
@@ -19,6 +20,7 @@ jobs:
         git add -A
         git commit -m "new pack"
         git push --force
+        
   #Dark
     - name: Zip output DarkRP
       run: zip -r release/BingoRPGommeDark.zip pack.png pack.mcmeta README.md assets
