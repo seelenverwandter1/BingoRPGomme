@@ -20,6 +20,11 @@ jobs:
         git add -A
         git commit -m "new pack"
         git push --force
+  
+    - uses: actions/upload-artifact@v3
+      with:
+        name: BingoRPGommeLight.zip
+        path: release/BingoRPGommeLight.zip
         
   #Dark
     - name: Zip output DarkRP
@@ -30,3 +35,8 @@ jobs:
         git add -A
         git commit -m "new pack"
         git push --force
+        
+    - uses: actions/upload-artifact@v3
+      with:
+        name: BingoRPGommeDark.zip
+        path: release/BingoRPGommeDark.zip
