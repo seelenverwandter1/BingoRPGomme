@@ -13,9 +13,9 @@ jobs:
 
     - name: Zip output
       run: zip -r outputx.zip pack.png pack.mcmeta
-      working-directory: release/
-    - name: push changes to remote
-      run: |
-        git add -A
-        git commit -m "new pack"
-        git push --force
+      working-directory: .
+ #   - name: push changes to remote
+ #     run: |
+ #       git add -A
+ #       git commit -m "new pack"
+ #       git push --force
