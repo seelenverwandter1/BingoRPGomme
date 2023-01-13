@@ -51,6 +51,6 @@ jobs:
         # Discord Channel webhook token
         webhook_token: ${{ secrets.DCToken }}
         # custom message to be sent
-        message: Es gibt ein neues Ressourcepack Update!! \n${{ github.event.head_commit.message }} \nDarkmode :dark_sunglasses:\nhttps://bit.ly/BingoRPDark\n\nLight :sun_with_face:\nhttps://bit.ly/BingoRPLight
+        message: Es gibt ein neues Ressourcepack Update!! \n${{ github.event.head_commit.message }} \nDarkmode :dark_sunglasses:\n<https://bit.ly/BingoRPDark>\n\nLight :sun_with_face:\n<https://bit.ly/BingoRPLight> Viel Spaß!
         
 
