@@ -13,7 +13,7 @@ jobs:
       
   #List files
     - name: List files
-      run: ls -R
+      run: git ls-files --deleted
       working-directory: .
       
 #Light
