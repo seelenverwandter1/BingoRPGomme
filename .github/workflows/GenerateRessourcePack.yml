@@ -7,10 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-#    - uses: actions/checkout@master
+    - uses: actions/checkout@master
     - name: pull latest and remove old file from repo
       run: |
         git config --global user.name "1Timo1"
+    - name: Remove Old Files
+      run: git clean -fdx 
     - name: Install zip
       uses: montudor/action-zip@v1
       
