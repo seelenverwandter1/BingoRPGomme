@@ -18,8 +18,9 @@ jobs:
     - name: push changes to remote
       run: |
         git add -A
+        git clean -df
         git commit -m "new pack"
-   #     git push --force
+        git push --force
   
     - uses: actions/upload-artifact@v3
       with:
