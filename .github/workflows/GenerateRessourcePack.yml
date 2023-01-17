@@ -13,6 +13,8 @@ jobs:
         git config --global user.name "1Timo1"
     - name: Remove Old Files
       run: git clean -fdx 
+    - name: List Remote Files
+      run: git ls-remote --exit-code origin
     - name: Install zip
       uses: montudor/action-zip@v1
       
