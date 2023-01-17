@@ -7,17 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+#    - uses: actions/checkout@master
     - name: pull latest and remove old file from repo
       run: |
         git config --global user.name "1Timo1"
     - name: Install zip
       uses: montudor/action-zip@v1
-      
-  #List files
-    - name: List files
-      run: git ls-files
-      working-directory: .
       
 #Light
     - name: Zip output LightRP
@@ -26,15 +21,8 @@ jobs:
     - name: push changes to remote
       run: |
         git add -A
-        git ls-files
-        git clean -df
         git commit -m "new pack"
         git push --force
-  
-    - uses: actions/upload-artifact@v3
-      with:
-        name: BingoRPGommeLight.zip
-        path: release/BingoRPGommeLight.zip
         
   #Dark
     - name: Zip output DarkRP
@@ -43,14 +31,8 @@ jobs:
     - name: push changes to remote
       run: |
         git add -A
-        git clean -df
         git commit -m "new pack"
         git push --force
-        
-    - uses: actions/upload-artifact@v3
-      with:
-        name: BingoRPGommeDark.zip
-        path: release/BingoRPGommeDark.zip
         
     - name: Discord Webhook Send Message
       # You may pin to the exact commit or the version.
