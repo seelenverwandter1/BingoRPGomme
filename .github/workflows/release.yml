@@ -11,6 +11,11 @@ jobs:
     - name: Install zip
       uses: montudor/action-zip@v1
       
+  #List files
+    - name: List files
+      run: ls -R
+      working-directory: .
+      
 #Light
     - name: Zip output LightRP
       run: zip -r release/BingoRPGommeLight.zip pack.png pack.mcmeta README.md assets -x assets/minecraft/textures/gui\*
