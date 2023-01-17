@@ -1,4 +1,4 @@
-name: use this
+name: GenerateRessourcePack
 #on: [push]
 on:
   workflow_dispatch:
