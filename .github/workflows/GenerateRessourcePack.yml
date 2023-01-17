@@ -23,7 +23,7 @@ jobs:
     - name: push changes to remote
       run: |
         git add -A
-        git show --pretty="" --name-only <sha1-commit-hash>
+        git show --pretty="" --name-only
         git commit -m "new pack"
         git push --force
         
