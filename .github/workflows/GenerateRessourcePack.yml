@@ -1,7 +1,6 @@
 name: GenerateRessourcePack
-#on: [push]
-on:
-  workflow_dispatch:
+
+on: [push]
 
 jobs:
   build:
