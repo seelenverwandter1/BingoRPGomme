@@ -9,11 +9,10 @@ jobs:
     - uses: actions/checkout@master
     - name: pull latest and remove old file from repo
       run: |
+        git config --global user.email "filsinger.t@gmail.com"
         git config --global user.name "1Timo1"
     - name: Remove Old Files
       run: git clean -fdx 
-        git config --global user.email "filsinger.t@gmail.com"
-        git config --global user.name "Seelenverwandter"
     - name: Install zip
       uses: montudor/action-zip@v1
       
