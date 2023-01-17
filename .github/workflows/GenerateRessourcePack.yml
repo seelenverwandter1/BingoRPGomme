@@ -27,6 +27,11 @@ jobs:
         git commit -m "new pack"
         git push --force
         
+    - uses: actions/upload-artifact@v3
+      with:
+        name: BingoRPGommeLight.zip
+        path: release/BingoRPGommeLight.zip
+        
   #Dark
     - name: Zip output DarkRP
       run: zip -r release/BingoRPGommeDark.zip pack.png pack.mcmeta README.md assets
@@ -36,6 +41,11 @@ jobs:
         git add -A
         git commit -m "new pack"
         git push --force
+  
+    - uses: actions/upload-artifact@v3
+      with:
+        name: BingoRPGommeDark.zip
+        path: release/BingoRPGommeDark.zip
         
     - name: Discord Webhook Send Message
       # You may pin to the exact commit or the version.
