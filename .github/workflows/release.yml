@@ -13,7 +13,7 @@ jobs:
       
   #List files
     - name: List files
-      run: git ls-files --deleted
+      run: git ls-files
       working-directory: .
       
 #Light
@@ -23,6 +23,7 @@ jobs:
     - name: push changes to remote
       run: |
         git add -A
+        git ls-files
         git clean -df
         git commit -m "new pack"
         git push --force
@@ -39,6 +40,7 @@ jobs:
     - name: push changes to remote
       run: |
         git add -A
+        git clean -df
         git commit -m "new pack"
         git push --force
         
